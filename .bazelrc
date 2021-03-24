@@ -1,0 +1,3 @@
+build --cxxopt="-std=c++14"
+build --cxxopt="-Wpedantic"
+build:debug --cxxopt="-g"
