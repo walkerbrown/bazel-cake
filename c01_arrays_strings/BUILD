@@ -8,6 +8,13 @@ cc_binary(
 )
 
 cc_binary(
+    name = "merging_meeting_times",
+    srcs = ["merging_meeting_times.cpp"],
+    deps = ["//lib/lest"],
+    copts = ["-Ilib/lest"],
+)
+
+cc_binary(
     name = "string_reverse",
     srcs = ["string_reverse.cpp"],
     deps = ["//lib/lest"],
